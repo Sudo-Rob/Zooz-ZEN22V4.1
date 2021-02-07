@@ -12,7 +12,7 @@
 		}
 	],
 	"firmwareVersion": {
-		"min": "4.1",
+		"min": "3.0",
 		"max": "19.0"
 	},
 	"supportsZWavePlus": true,
@@ -123,7 +123,7 @@
 			]
 		},
 		"6": {
-			"label": "Auto Turn-on time",
+			"label": "Auto Turn-On Timer Duration",
 			"unit": "minutes",
 			"valueSize": 4,
 			"minValue": 1,
@@ -132,6 +132,82 @@
 			"readOnly": false,
 			"writeOnly": false,
 			"allowManualEntry": true
+		},
+		"7": {
+			"label": "Association Reports",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 1,
+			"defaultValue": 15,
+			"readOnly": false,
+			"writeOnly": false,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "None",
+					"value": 0
+				},
+				{
+					"label": "Physical tap on ZEN22 only",
+					"value": 1
+				},
+				{
+					"label": "Physical tap on connected 3-way switch only",
+					"value": 2
+				},
+				{
+					"label": "Physical tap on ZEN22 or connected 3-way switch",
+					"value": 3
+				},
+				{
+					"label": "Z-Wave command from hub",
+					"value": 4
+				},
+				{
+					"label": "Physical tap on ZEN22 or Z-Wave command from hub",
+					"value": 5
+				},
+				{
+					"label": "Physical tap on connected 3-way switch or Z-Wave command from hub",
+					"value": 6
+				},
+				{
+					"label": "Physical tap on ZEN22 / connected 3-way switch or Z-Wave command from hub",
+					"value": 7
+				},
+				{
+					"label": "Timer only",
+					"value": 8
+				},
+				{
+					"label": "Physical tap on ZEN22 or timer",
+					"value": 9
+				},
+				{
+					"label": "Physical tap on connected 3-way switch or timer",
+					"value": 10
+				},
+				{
+					"label": "Physical tap on ZEN22 / connected 3-way switch or timer",
+					"value": 11
+				},
+				{
+					"label": "Z-Wave command from hub or timer",
+					"value": 12
+				},
+				{
+					"label": "Physical tap on ZEN22, Z-Wave command from hub, or timer",
+					"value": 13
+				},
+				{
+					"label": "Physical tap on ZEN22 / connected 3-way switch, Z-Wave command from hub, or timer",
+					"value": 14
+				},
+				{
+					"label": "All of the above. (default)",
+					"value": 15
+				}
+			]
 		},
 		"8": {
 			"label": "Status after Power failure",
@@ -144,15 +220,15 @@
 			"allowManualEntry": false,
 			"options": [
 				{
-					"label": "Forced to OFF",
+					"label": "forced to OFF",
 					"value": 0
 				},
 				{
-					"label": "Forced to ON",
+					"label": "forced to ON",
 					"value": 1
 				},
 				{
-					"label": "Restore prior status",
+					"label": "restore prior status",
 					"value": 2
 				}
 			]
@@ -390,11 +466,11 @@
 			"allowManualEntry": false,
 			"options": [
 				{
-					"label": "Switch reports on/off status and changes LED indicator state even if physical and Z-Wave control is disabled (default)",
+					"label": "switch reports on/off status and changes LED indicator state even if physical and Z-Wave control is disabled (default)",
 					"value": 0
 				},
 				{
-					"label": "Switch doesn't report on/off status or change LED indicator state when physical (and Z-Wave) control is disabled",
+					"label": "switch doesn't report on/off status or change LED indicator state when physical (and Z-Wave) control is disabled",
 					"value": 1
 				}
 			]
