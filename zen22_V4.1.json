@@ -12,7 +12,7 @@
 		}
 	],
 	"firmwareVersion": {
-		"min": "3.0",
+		"min": "4.1",
 		"max": "19.0"
 	},
 	"supportsZWavePlus": true,
@@ -144,15 +144,15 @@
 			"allowManualEntry": false,
 			"options": [
 				{
-					"label": "forced to OFF",
+					"label": "Forced to OFF",
 					"value": 0
 				},
 				{
-					"label": "forced to ON",
+					"label": "Forced to ON",
 					"value": 1
 				},
 				{
-					"label": "restore prior status",
+					"label": "Restore prior status",
 					"value": 2
 				}
 			]
@@ -390,11 +390,11 @@
 			"allowManualEntry": false,
 			"options": [
 				{
-					"label": "switch reports on/off status and changes LED indicator state even if physical and Z-Wave control is disabled (default)",
+					"label": "Switch reports on/off status and changes LED indicator state even if physical and Z-Wave control is disabled (default)",
 					"value": 0
 				},
 				{
-					"label": "switch doesn't report on/off status or change LED indicator state when physical (and Z-Wave) control is disabled",
+					"label": "Switch doesn't report on/off status or change LED indicator state when physical (and Z-Wave) control is disabled",
 					"value": 1
 				}
 			]
